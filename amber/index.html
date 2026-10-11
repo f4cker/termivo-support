@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="zh-Hans"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Amber 支持：数据库连接、SQL 查询、本地文件与 TestFlight 反馈。"><title>Amber · 支持 / Support</title>
+<link rel="stylesheet" href="../style.css"></head><body><main>
+<header><h1>Amber</h1><p>Modern Database Client · iPhone / iPad</p></header>
+<nav><a href="index.html" aria-current="page">支持 / Support</a><a href="privacy.html" >隐私 / Privacy</a></nav>
+
+<h2>联系支持</h2><p>请联系 <a href="mailto:reallayoute@gmail.com">reallayoute@gmail.com</a>。请提供 iOS/iPadOS 版本、Amber 版本与构建号、数据库引擎及版本、复现步骤，以及隐藏敏感信息后的错误提示。请勿发送密码、连接串、数据库主机地址、生产数据或未脱敏的查询结果；截图也请先遮盖敏感内容。</p>
+<h2>开始使用</h2><p>Amber 是面向 iPhone 和 iPad 的数据库客户端，要求 iOS/iPadOS 26 或更新版本。当前界面为简体中文，个人模式无需 Amber 账号。远程数据库需要你自己的服务器、网络访问条件及有效数据库凭据；Amber 不提供托管数据库或数据库账号。</p>
+<h2>常见问题</h2>
+<h3>支持哪些数据库？</h3><p>当前支持 MySQL、PostgreSQL、MongoDB 单节点、Redis 单机，以及通过“文件”选择的本地 SQLite 数据库。其他品牌的兼容性取决于其协议及服务器功能。MongoDB SRV/副本集、Redis 集群/哨兵、SSH 隧道和代理暂未接入。</p>
+<h3>为什么无法连接？</h3><p>请确认主机、端口、账号与数据库名称，以及设备所在网络是否能访问服务器。局域网连接可能需要系统的本地网络权限。使用 TLS 时，服务器证书必须满足所选校验方式；PROD 连接要求完全校验。请勿为排查问题把数据库直接开放给整个互联网。</p>
+<h3>能执行任意 SQL 或写入吗？</h3><p>SQL 编辑器仅执行经过检查的单条只读查询，并限制结果数量。数据变更和导入使用各自的审核与确认流程；能力随引擎、对象和账号权限而不同。结构对比可生成迁移脚本，当前不自动执行结构变更。请先使用专用测试数据库及最小权限账号验证操作，提交前核对 SQL 与影响范围。</p>
+<h3>密码和连接会同步到 iCloud 吗？</h3><p>当前版本不提供 iCloud 数据同步。连接配置和查询库保存在本机，数据库密码保存在仅此设备可用的系统钥匙串中。系统备份与云端文件位置由你的系统设置决定，详情见隐私政策。</p>
+<h3>怎样使用导入和导出？</h3><p>从表的工具入口选择文件并核对解析和列映射，导入写入前请检查审核信息。导出和分享会生成包含所选数据库数据的文件；这些数据文件不由 Amber 自动加密。请自行选择安全的存储位置和接收者。</p>
+<h3>为什么 AI、团队或网关显示“尚未接入”？</h3><p>当前为早期个人测试版，没有接入 AI 服务、团队后端、团队网关或 iCloud 同步。这些入口的说明不是已提供该服务的承诺。</p>
+<h3>怎样反馈 TestFlight 问题？</h3><p>可以通过 TestFlight 的“发送 Beta 反馈”或上述支持邮箱反馈。请注明构建号、复现步骤和数据库类型，并在发送前检查截图与日志是否包含凭据或数据库内容。TestFlight 安装、诊断和反馈由 Apple 提供，受 Apple 的相关政策及你的设置管理。</p>
+<h2 lang="en">Support</h2><p lang="en">Amber is a native database client for iPhone and iPad running iOS/iPadOS 26 or later. The app interface is Simplified Chinese. Personal mode does not require an Amber account. Bring your own reachable database and credentials. This early beta supports MySQL, PostgreSQL, single-node MongoDB, standalone Redis and local SQLite files. AI services, team collaboration, gateways, iCloud sync, SSH tunnels and proxies are not connected.</p><p lang="en">Contact <a href="mailto:reallayoute@gmail.com">reallayoute@gmail.com</a> with your OS version, app version/build, database engine/version, reproduction steps and redacted errors. Never send credentials, connection strings, server addresses or production data. Test changes on a dedicated test database and review every operation. Exported database files are not automatically encrypted by Amber.</p>
+<footer>© 2026 LAVAS LABS LIMITED · <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple 标准使用条款 / Standard EULA</a></footer>
+</main></body></html>
